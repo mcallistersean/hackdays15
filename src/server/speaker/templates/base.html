@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% load static from staticfiles %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+<html lang="{{ LANGUAGE_CODE }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% if LANGUAGE_BIDI %}
+    <link rel="stylesheet" href="{% static 'rtl/css/foundation.css' %}" />
+    {% else %}
+    <link rel="stylesheet" href="{% static 'ltr/css/foundation.css' %}" />
+    {% endif %}
+</head>
+<body>
+
+<nav class="title-bar">
+  <div class="title-bar-left">
+{#    <button class="menu-icon" type="button"></button>#}
+    <span class="title-bar-title">{% trans 'The Compass' %}</span>
+  </div>
+  <div class="title-bar-right">
+    <button class="menu-icon" type="button"></button>
+  </div>
+</nav>
+<main>
+{% block main %}
+<div id="speaker" style="display:none"></div>
+<h2 class="text-center">Please select your language</h2>
+<section>
+{% for language in languages %}
+    {% language language.code %}
+        <a class="secondary hollow expanded button" href='{% url 'compass_start' %}'>
+            {{ language.name_local }} {{ language.language_code }}
+            {% if language.name != language.name_local %}
+            <sub>{{ language.name }}</sub>
+            {% endif %}
+        </a>
+    {% endlanguage %}
+{% endfor %}
+</section>
+
+{% endblock main %}
+</main>
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>

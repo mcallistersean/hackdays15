@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block main %}
+    {% get_current_language_bidi as LANGUAGE_BIDI %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <h2>{{ LANGUAGE_CODE }}</h2>
+    <h3>test</h3>
+{% endblock %}
