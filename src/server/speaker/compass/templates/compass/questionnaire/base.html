@@ -1,0 +1,23 @@
+{% extends 'compass/start.html' %}
+
+{% block main %}
+    {% block question %}
+        <div class="callout large answer text-center" style="margin-top: 0.5em;">
+            {{ question|linebreaks }}
+        </div>
+    {% endblock question %}
+    <hr>
+    {% block answers %}
+        {% for answer in answers %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" value="{{ forloop.counter0 }}" name="answer" />
+            <button class="secondary hollow expanded button" type='submit' value="{{ forloop.counter0 }}">
+                {{ answer }}
+            </button>
+        </form>
+        {% endfor %}
+    {% endblock %}
+
+
+{% endblock %}

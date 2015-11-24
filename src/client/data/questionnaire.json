@@ -1,0 +1,16 @@
+{
+  "title": "Questionnaire title",
+  "questions": [
+    {
+      "type": "single-select",
+      "q": "Which country are you from?",
+      "answers": [
+        "Afghanistan",
+        "Syria",
+        "Iraq",
+        "other"
+      ]
+    }
+  ]
+
+}

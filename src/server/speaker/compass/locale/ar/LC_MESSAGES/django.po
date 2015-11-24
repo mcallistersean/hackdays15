@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FULL NAME <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-25 15:17+0000\n"
+"PO-Revision-Date: 2015-11-25 16:19+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: compass/forms.py:16
+msgid "Name "
+msgstr ""
+
+#: compass/questionnaire.py:4
+msgid "What country are you from?"
+msgstr "من اي بلد انت؟"
+
+#: compass/questionnaire.py:6
+msgid "Iraq"
+msgstr "العراق"
+
+#: compass/questionnaire.py:7
+msgid "Syria"
+msgstr "سوريا"
+
+#: compass/questionnaire.py:8
+msgid "Afghanistan"
+msgstr "أفغانستان"
+
+#: compass/questionnaire.py:9
+msgid "Pakistan"
+msgstr "باكستان"
+
+#: compass/questionnaire.py:10
+msgid "other"
+msgstr "آخر"
+
+#: compass/questionnaire.py:14
+msgid "What is your destination?"
+msgstr "ما هي وجهتك؟"
+
+#: compass/questionnaire.py:16
+msgid "I want to stay in Austria"
+msgstr "أريد البقاء في النمسا"
+
+#: compass/questionnaire.py:17
+msgid "Germany"
+msgstr "ألمانيا"
+
+#: compass/questionnaire.py:18
+msgid "Sweden"
+msgstr "السويد"
+
+#: compass/questionnaire.py:19
+msgid "United Kingdom"
+msgstr "المملكة المتحدة"
+
+#: compass/questionnaire.py:20
+msgid "other European country"
+msgstr "دولة أوروبية أخرى"
+
+#: compass/questionnaire.py:24
+msgid "Do you need a doctor?"
+msgstr "هل تحتاج إلى الطبيب؟"
+
+#: compass/questionnaire.py:26
+msgid "No"
+msgstr "لا"
+
+#: compass/questionnaire.py:27
+msgid "Yes"
+msgstr "نعم فعلا"
+
+#: compass/templates/compass/questionnaire/completed.html:11
+msgid "Results"
+msgstr "النتائج"
+
+#: compass/templates/compass/questionnaire/completed.html:25
+msgid "Display results in a different language"
+msgstr "النتائج بلغة أخرى"
+
+#: compass/templates/compass/start.html:9
+msgid "Demo Applications"
+msgstr "تطبيقات تجريبي"
+
+#: compass/templates/compass/start.html:11
+msgid "Questionnaire"
+msgstr "استطلاع"
