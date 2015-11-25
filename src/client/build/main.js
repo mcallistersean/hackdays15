@@ -56,12 +56,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//require('foundation-sites/foundation-sites.scss');
-	//require('scss/foundation');
-
 	/**
 	 * Created by sean on 11/24/15.
 	 */
+
 	var Speaker = _react2.default.createClass({
 	    displayName: 'Speaker',
 

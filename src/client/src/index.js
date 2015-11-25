@@ -4,9 +4,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//require('foundation-sites/foundation-sites.scss');
-//require('scss/foundation');
-
 var Speaker = React.createClass({
     getDefaultProps: function(){
         return {

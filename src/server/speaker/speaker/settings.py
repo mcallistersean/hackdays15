@@ -123,3 +123,4 @@ STATICFILES_DIRS = [
 SITE_ID = 1
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+

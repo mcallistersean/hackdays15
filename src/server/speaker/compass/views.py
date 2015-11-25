@@ -8,6 +8,8 @@ from .models import CompassPage
 
 from .questionnaire import q
 
+from django.views.generic import DetailView, TemplateView
+
 
 class LeafDetail(DetailView):
     template_name = 'compass/leaf.html'
